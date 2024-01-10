@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import MovieCard from "../components/MovieCard";
+import MovieCard from "../../components/MovieCard";
 
 const MoviePage = () => {
   const [movies, setMovies] = useState([]);

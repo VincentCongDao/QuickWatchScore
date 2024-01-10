@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import AllCard from "./components/AllCards";
+import AllCard from "../components/AllCards";
 
 export default function Home() {
   const [mediaType, setMediaType] = useState("all");
@@ -47,12 +47,12 @@ export default function Home() {
     fetchData();
   }, [mediaType]);
   return (
-    <div className="w-full h-auto bg-zinc-800">
+    <div className="w-full h-auto ">
       <div className="">
         <div className="flex justify-center py-5">
           <button
             onClick={() => setMediaType("all")}
-            className={`linear-graident-effect mx-2 outline-blue-500/50 p-2 border px-2 ease-in duration-300 hover:bg-sky-400 transition  ${
+            className={`text-slate-950 dark:text-slate-100 linear-graident-effect mx-2 outline-blue-500/50 p-2 border px-2 ease-in duration-300 hover:bg-sky-400 transition  ${
               mediaType === "all" ? "bg-blue-400" : ""
             }`}
           >
@@ -60,7 +60,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => setMediaType("movie")}
-            className={`linear-graident-effect mx-2 outline-blue-500/50 p-2 border px-2 ease-in duration-300 hover:bg-sky-400  transition ${
+            className={`text-slate-950 dark:text-slate-100 linear-graident-effect mx-2  outline-blue-500/50 p-2 border px-2 ease-in duration-300 hover:bg-sky-400  transition ${
               mediaType === "movie" ? "bg-blue-400" : ""
             }`}
           >
@@ -68,7 +68,7 @@ export default function Home() {
           </button>
           <button
             onClick={() => setMediaType("tv")}
-            className={`linear-graident-effect mx-2 outline-blue-500/50 p-2 border px-2 ease-in duration-300 hover:bg-sky-400 transition  ${
+            className={`text-slate-950  dark:text-slate-100 linear-graident-effect mx-2 outline-blue-500/50 p-2 border px-2 ease-in duration-300 hover:bg-sky-400 transition  ${
               mediaType === "tv" ? "bg-blue-400" : ""
             }`}
           >

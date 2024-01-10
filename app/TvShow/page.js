@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import TvShowCard from "../components/TvShowCard";
+import TvShowCard from "../../components/TvShowCard";
 
 const TvShowPage = () => {
   const [tvShows, settvShows] = useState([]);
